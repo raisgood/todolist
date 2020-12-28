@@ -1,2 +1,2 @@
 # todolist
-Name: Rashad 
+Name: Rashad Humphrey
