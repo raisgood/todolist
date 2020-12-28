@@ -1,3 +1,3 @@
 # todolist
 Name: Rashad Humphrey
-Overview/description of the 
+Overview/description of the project
