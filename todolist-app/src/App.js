@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import TodoForm from './components/TodoForm/TodoForm';
 import TodoList from './components/TodoList/TodoList';
 
+//counter, seCounter, To Do List and Time Choosen
+
 function App() {
     const [counter, setCounter] = useState(4);
     const [data, setData] = useState([
@@ -37,19 +39,18 @@ function App() {
         }));
     }
 
-    return ( <
-        div className = "App" >
+    return ( < div className = "App" >
         <
         header className = "App-header" >
         <
-        h2 > To Do List < /h2>  <
-        /header>  <
+        h2 > To Do List < /h2>     <
+        /header> <
         TodoForm handleClear = { handleClear }
         handleAdd = { handleAdd }
-        />  <
+        />      <
         TodoList items = { data }
         handleUpdate = { handleUpdate }
-        />  <
+        />   <
         /div>
     );
 }

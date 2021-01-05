@@ -3,12 +3,18 @@
     --hover-input-color: #a47cdb;
 }
 
+
+/*input css*/
+
 input {
     padding: 8px;
     margin: 0 10px;
     font-family: cursive, bold;
     color: black;
 }
+
+
+/*button css*/
 
 button {
     display: inline-block;

@@ -2,6 +2,8 @@ import React from 'react';
 import TodoItem from '../TodoItem/TodoItem';
 import './TodoList.css';
 
+// To Do List Function
+
 export default function TodoList({items, handleUpdate}) {
     const markup = items.map ( item =>
         <TodoItem key={item.key} 

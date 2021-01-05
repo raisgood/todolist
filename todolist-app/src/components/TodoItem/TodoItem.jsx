@@ -2,6 +2,8 @@ import React from 'react';
 import './TodoItem.css';
 import editSolid from "./edit-solid.svg";
 
+//To Do List Props
+
 export default function TodoItem(props) {
     const [isReadOnly, updateIsReadOnly] = React.useState(true);
     const [todolist, setTodolist] = React.useState(props.todolist);
