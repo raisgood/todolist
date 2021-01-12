@@ -3,19 +3,21 @@ import React, { useState } from 'react';
 import TodoForm from './components/TodoForm/TodoForm';
 import TodoList from './components/TodoList/TodoList';
 
-//counter, setCounter, To Do List and Time Choosen
+//lines 6 - 55 counter, setCounter, To Do List and Time Choosen
 
+
+//Text written upon appearance of site.
 function App() {
     const [counter, setCounter] = useState(4);
     const [data, setData] = useState([
         { todolist: 'Click to List Activity', time: 'Click to List Time', key: 0 },
-        { todolist: 'Click to List Activity', time: 'Click to List Time', key: 2 },
-        { todolist: 'Click to List Activity', time: 'Click to List Time', key: 3 },
+        { todolist: 'Click to List Activity', time: 'Click to List Time', key: 0 },
     ]);
 
+    //Makes all the items stay or disappear within the clear button
     const handleClear = (event) => {
         event.preventDefault();
-        setData([{ todolist: '', time: '', key: '' }]);
+        setData([/*{ todolist: '', time: '', key: '' }*/]);
     }
 
     const handleAdd = (todolist, time) => {

@@ -4,7 +4,7 @@
 }
 
 input {
-    padding: 8px;
+    padding: 5px;
     margin: 10px -10px 10px -15px;
     text-align: center;
     font-family: cursive, bold;
@@ -14,7 +14,7 @@ input {
 button {
     display: inline-block;
     font-family: cursive, bold;
-    padding: 8px;
+    padding: 6px;
     color: var(--main-input-color);
     text-decoration: none;
     font-weight: 500;
