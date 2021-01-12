@@ -14,13 +14,11 @@ input {
 button {
     display: inline-block;
     font-family: cursive, bold;
-    padding: 1rem 2rem;
+    padding: 8px;
     color: var(--main-input-color);
     text-decoration: none;
     font-weight: 500;
-    border: 2px solid var(--main-input-color);
     box-shadow: 2px 2px 6px rgba(156, 123, 51, 0.664);
-    margin: 0.5rem;
     cursor: pointer;
     color: whitesmoke;
     background-color: rgb(87, 9, 84);
