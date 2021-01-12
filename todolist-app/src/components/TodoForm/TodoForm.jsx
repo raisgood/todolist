@@ -1,7 +1,7 @@
 import React from 'react';
 import './TodoForm.css';
 
-// To Do Forms Probs
+// Add and Clear Buttons
 
 export default function TodoForm(props) {
     const updateData = event => {
@@ -15,10 +15,10 @@ export default function TodoForm(props) {
 
   return (
     <form onSubmit={ updateData }>
-      <input type="text" name="todolist-item" className="js-todolist-item" placeholder="Enter Activity" />
-      <input type="text" className="js-time" placeholder="Enter Time" />
-    <button type="submit">Add Activity</button>
-    <button onClick={props.handleClear}>Clear Activity</button>
+      <input type="text" name="todolist-item" className="js-todolist-item" placeholder="List Activity" />
+      <input type="text" className="js-time" placeholder="List Time" />
+    <button type="submit">Add</button>
+    <button onClick={props.handleClear}>Clear</button>
     </form>
   )
 }

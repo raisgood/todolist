@@ -3,20 +3,19 @@ import React, { useState } from 'react';
 import TodoForm from './components/TodoForm/TodoForm';
 import TodoList from './components/TodoList/TodoList';
 
-//counter, seCounter, To Do List and Time Choosen
+//counter, setCounter, To Do List and Time Choosen
 
 function App() {
     const [counter, setCounter] = useState(4);
     const [data, setData] = useState([
-        { todolist: 'What Do You Need To Do?', time: 'Choose a Time', key: 0 },
-        { todolist: 'What Do You Need To Do?', time: 'Choose a Time', key: 2 },
-        { todolist: 'What Do You Need To Do?', time: 'Choose a Time', key: 3 },
-        { todolist: 'What Do You Need To Do?', time: 'Choose a Time', key: 4 },
+        { todolist: 'Click to List Activity', time: 'Click to List Time', key: 0 },
+        { todolist: 'Click to List Activity', time: 'Click to List Time', key: 2 },
+        { todolist: 'Click to List Activity', time: 'Click to List Time', key: 3 },
     ]);
 
     const handleClear = (event) => {
         event.preventDefault();
-        setData([{ todolist: 'What Do You Need To Do?', time: 'Choose a Time', key: '' }]);
+        setData([{ todolist: '', time: '', key: '' }]);
     }
 
     const handleAdd = (todolist, time) => {
@@ -39,19 +38,16 @@ function App() {
         }));
     }
 
-    return ( < div className = "App" >
-        <
-        header className = "App-header" >
-        <
-        h2 > To Do List < /h2>     <
-        /header> <
-        TodoForm handleClear = { handleClear }
-        handleAdd = { handleAdd }
-        />      <
-        TodoList items = { data }
-        handleUpdate = { handleUpdate }
-        />   <
-        /div>
+    return ( 
+        <div className = "App">
+        <header className = "App-header">
+        <h2> To Do List </h2>    
+        </header>
+        <TodoForm handleClear = { handleClear }
+        handleAdd = { handleAdd }/>     
+        <TodoList items = { data }
+        handleUpdate = { handleUpdate }/>  
+        </div>
     );
 }
 
