@@ -14,7 +14,6 @@ Ideas for future improvements:
 3) Add a time feature to the page.
 
 
-State Component Planning: 
 
 State and Component Planning:
 
