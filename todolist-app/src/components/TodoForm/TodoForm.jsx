@@ -15,7 +15,9 @@ export default function TodoForm(props) {
 
   return (
     <form onSubmit={ updateData }>
-      <input type="text" name="todolist-item" className="js-todolist-item" placeholder="List Activity" />
+    <label className="label1"><strong>List Your "To Do" List Activity Here:</strong></label>
+      <input type="text" ClassName="todolist-item" className="js-todolist-item" placeholder="List Activity" />
+      <label className="label2"><strong>List the Time and "Press Add":</strong></label>
       <input type="text" className="js-time" placeholder="List Time" />
     <button type="submit">Add</button>
     <button onClick={props.handleClear}>Clear</button>

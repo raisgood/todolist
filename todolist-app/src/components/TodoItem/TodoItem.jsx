@@ -1,6 +1,6 @@
 import React from 'react';
 import './TodoItem.css';
-import checkSolid from "./check-solid.svg";
+import editSolid from "./edit-solid.svg";
 
 //Check Buttons
 
@@ -35,7 +35,7 @@ export default function TodoItem(props) {
     return (
         <div className="todo-item">
             {todolistContent} {timeContent}
-            <img src={checkSolid} alt="Edit todolist" className="edit-todolist" onClick={toggleReadyOnly} />
+            <img src={editSolid} alt="Edit todolist" className="edit-todolist" onClick={toggleReadyOnly} />
         </div>
     )
 }

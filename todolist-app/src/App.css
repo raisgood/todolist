@@ -2,7 +2,6 @@
 
 .App {
     text-align: center;
-    margin: -15px;
 }
 
 .App-header {
@@ -10,7 +9,6 @@
     height: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     font-size: 50px;
     color: black;
